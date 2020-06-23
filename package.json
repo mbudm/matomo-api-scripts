@@ -1,0 +1,19 @@
+{
+  "name": "analytics-scripts",
+  "version": "1.0.0",
+  "description": "analytics scripts for matomo API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "tape ./test/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "piwik-client": "^0.2.2"
+  },
+  "devDependencies": {
+    "tape": "^5.0.1"
+  }
+}
