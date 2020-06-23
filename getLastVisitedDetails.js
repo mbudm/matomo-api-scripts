@@ -25,7 +25,7 @@ const findEarlierVisitLogs = (visitLogs, sourceVisitLogs) => {
 
 const getClosestEarlierAction = (actions, targetAction) => {
     return actions.reduce((closestAction, action) => {
-        return (targetAction.timestamp - closestAction.timestamp) > (targetAction.timestamp - action.timestamp) 
+        return (action.timestamp > closestAction.timestamp) && (action.timestamp <= targetAction.timestamp) 
             && targetAction.pageIdAction !== action.pageIdAction ?
             action :
             closestAction;
